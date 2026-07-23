@@ -112,10 +112,10 @@ GitHub:
 https://github.com/annuscodes
 
 LinkedIn:
-(Add your LinkedIn URL)
+www.linkedin.com/in/muhammad-annus-a2299b297
 
 Portfolio:
-(Add your portfolio when available)
+-
 
 ---
 
