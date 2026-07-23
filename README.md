@@ -10,11 +10,7 @@ A premium, modern, and fully responsive landing page for **Ascent Digital**, a f
 
 ## 📸 Preview
 
-> Add a screenshot here after creating an `assets/images` folder.
-
-```md
 ![Homepage Preview](assets/images/homepage.png)
-```
 
 ---
 
