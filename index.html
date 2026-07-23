@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Ascent Digital | Built for the climb</title>
+  <meta name="description" content="Ascent Digital is a performance marketing agency obsessed with measurable growth." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ==============================================
+       1. STICKY NAV
+       Provides persistent access to top-level pages
+       and primary CTA.
+       ============================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        Ascent
+        <svg class="logo-chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Start Your Climb</a>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==============================================
+         2. HERO SECTION
+         Primary value proposition and signature visual
+         moment (animated SVG chart).
+         ============================================== -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-headline">We Climb Brands.<br>We Don't Just Manage Them.</h1>
+          <p class="hero-sub">Ascent Digital is a performance marketing agency obsessed with measurable growth. Let's build something that lasts.</p>
+          <div class="hero-buttons">
+            <a href="#work" class="btn btn-outline">See Our Work</a>
+            <a href="#contact" class="btn btn-primary">Get a Free Audit</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="chart-container">
+            <svg class="growth-chart" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+              <g class="grid-lines" stroke="#E5E7EB" stroke-width="1">
+                <line x1="0" y1="50" x2="400" y2="50"></line>
+                <line x1="0" y1="100" x2="400" y2="100"></line>
+                <line x1="0" y1="150" x2="400" y2="150"></line>
+                <line x1="0" y1="200" x2="400" y2="200"></line>
+              </g>
+              <polyline class="chart-line" points="0,200 80,160 160,180 240,90 320,110 400,30" fill="none" stroke="var(--color-accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline>
+              <g class="chart-dots">
+                <circle class="chart-dot" cx="80" cy="160" r="4" fill="var(--color-accent)"></circle>
+                <circle class="chart-dot" cx="160" cy="180" r="4" fill="var(--color-accent)"></circle>
+                <circle class="chart-dot" cx="240" cy="90" r="4" fill="var(--color-accent)"></circle>
+                <circle class="chart-dot" cx="320" cy="110" r="4" fill="var(--color-accent)"></circle>
+                <circle class="chart-dot" cx="400" cy="30" r="4" fill="var(--color-accent)"></circle>
+              </g>
+            </svg>
+            <div class="hero-stats">
+              <div class="stat-highlight">
+                <span class="stat-plus">+</span><span class="hero-stat-number" data-target="248">0</span><span class="stat-percent">%</span>
+              </div>
+              <div class="stat-label">Traffic Growth</div>
+              <div class="stat-sublabel">Avg. client ROI in 6 months</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         3. MARQUEE STRIP
+         Infinite scrolling service keywords.
+         Pure CSS animation.
+         ============================================== -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          SEO Strategy &middot; Paid Media &middot; Brand Identity &middot; Growth Marketing &middot; Content Creation &middot; Analytics &middot; CRO &middot; Social Media &middot; Email Campaigns &middot; Performance Ads &middot;&nbsp;
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          SEO Strategy &middot; Paid Media &middot; Brand Identity &middot; Growth Marketing &middot; Content Creation &middot; Analytics &middot; CRO &middot; Social Media &middot; Email Campaigns &middot; Performance Ads &middot;&nbsp;
+        </div>
+      </div>
+    </div>
+
+    <!-- ==============================================
+         4. SERVICES SECTION
+         Highlighting core offerings.
+         ============================================== -->
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <h2 class="section-heading scroll-reveal">What We Do</h2>
+        <div class="services-grid">
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="14" x2="11" y2="8"></line>
+                <polyline points="8 11 11 8 14 11"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">SEO & Content</h3>
+            <p class="service-desc">Dominate search rankings with data-backed strategies and compelling copy.</p>
+          </div>
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+                <circle cx="12" cy="12" r="10" stroke-opacity="0.3"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">Paid Media</h3>
+            <p class="service-desc">Maximize your ROAS with hyper-targeted ad campaigns across all channels.</p>
+          </div>
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                <polygon points="12 8 13.5 10.5 16.5 11 14 13.5 14.5 16.5 12 15 9.5 16.5 10 13.5 7.5 11 10.5 10.5 12 8" stroke-width="1" stroke-linejoin="round"></polygon>
+              </svg>
+            </div>
+            <h3 class="service-title">Social & Brand</h3>
+            <p class="service-desc">Build a community and an identity that people actually want to follow.</p>
+          </div>
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                <polyline points="3 17 9 11 13 15 21 7"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Analytics & CRO</h3>
+            <p class="service-desc">Turn visitors into buyers with relentless optimization and clear reporting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         5. CASE STUDIES SECTION
+         Showcasing real client results with a duotone
+         photo treatment.
+         ============================================== -->
+    <section id="work" class="work section-padding">
+      <div class="container">
+        <h2 class="section-heading scroll-reveal">Work That Speaks</h2>
+        <div class="work-grid">
+          <div class="case-card scroll-reveal">
+            <div class="case-img-wrapper">
+              <img src="https://picsum.photos/seed/ascent1/800/600" alt="Meridian Retail" loading="lazy">
+            </div>
+            <div class="case-content">
+              <span class="case-tag">E-Commerce</span>
+              <h3 class="case-client">Meridian Retail</h3>
+              <div class="case-result">+183% Conversion Rate</div>
+            </div>
+          </div>
+          <div class="case-card scroll-reveal">
+            <div class="case-img-wrapper">
+              <img src="https://picsum.photos/seed/ascent2/800/600" alt="Forge Athletics" loading="lazy">
+            </div>
+            <div class="case-content">
+              <span class="case-tag">Paid Media</span>
+              <h3 class="case-client">Forge Athletics</h3>
+              <div class="case-result">4.2× ROAS</div>
+            </div>
+          </div>
+          <div class="case-card scroll-reveal">
+            <div class="case-img-wrapper">
+              <img src="https://picsum.photos/seed/ascent3/800/600" alt="Lumis Financial" loading="lazy">
+            </div>
+            <div class="case-content">
+              <span class="case-tag">SEO</span>
+              <h3 class="case-client">Lumis Financial</h3>
+              <div class="case-result">+310K Organic Sessions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         6. RESULTS SECTION
+         Impactful aggregate numbers that count up
+         when scrolled into view.
+         ============================================== -->
+    <section id="results" class="results">
+      <div class="container">
+        <h2 class="section-heading scroll-reveal text-center">Numbers We're Proud Of</h2>
+        <div class="stats-grid">
+          <div class="stat-item scroll-reveal">
+            <div class="stat-value"><span class="counter" data-target="248">0</span>%<span class="stat-plus">+</span></div>
+            <div class="stat-label">Average Traffic Growth</div>
+          </div>
+          <div class="stat-item scroll-reveal">
+            <div class="stat-value"><span class="counter" data-target="4.8" data-decimal="true">0</span>×</div>
+            <div class="stat-label">Average ROAS</div>
+          </div>
+          <div class="stat-item scroll-reveal">
+            <div class="stat-value"><span class="counter" data-target="150">0</span><span class="stat-plus">+</span></div>
+            <div class="stat-label">Brands Scaled</div>
+          </div>
+          <div class="stat-item scroll-reveal">
+            <div class="stat-value">$<span class="counter" data-target="2.4" data-decimal="true">0</span>M</div>
+            <div class="stat-label">Revenue Generated</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         7. PROCESS SECTION
+         Our sequenced methodology.
+         ============================================== -->
+    <section class="process section-padding">
+      <div class="container">
+        <h2 class="section-heading scroll-reveal">How We Work</h2>
+        <div class="process-timeline">
+          <div class="process-step scroll-reveal">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-desc">We audit your brand, market, and competitors</p>
+          </div>
+          <div class="process-step scroll-reveal">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Strategize</h3>
+            <p class="step-desc">We build a data-backed growth blueprint</p>
+          </div>
+          <div class="process-step scroll-reveal">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Launch</h3>
+            <p class="step-desc">We execute campaigns with surgical precision</p>
+          </div>
+          <div class="process-step scroll-reveal">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Grow</h3>
+            <p class="step-desc">We optimize relentlessly for compounding returns</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         8. TEAM SECTION
+         The people behind the agency.
+         ============================================== -->
+    <section class="team section-padding">
+      <div class="container">
+        <h2 class="section-heading scroll-reveal text-center">The Team Behind The Climb</h2>
+        <div class="team-grid">
+          <div class="team-member scroll-reveal">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Chen" class="team-photo" loading="lazy">
+            <h3 class="team-name">Sarah Chen</h3>
+            <div class="team-role">Head of Strategy</div>
+          </div>
+          <div class="team-member scroll-reveal">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcus Reid" class="team-photo" loading="lazy">
+            <h3 class="team-name">Marcus Reid</h3>
+            <div class="team-role">Paid Media Lead</div>
+          </div>
+          <div class="team-member scroll-reveal">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Nair" class="team-photo" loading="lazy">
+            <h3 class="team-name">Priya Nair</h3>
+            <div class="team-role">SEO Director</div>
+          </div>
+          <div class="team-member scroll-reveal">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Tom Lawson" class="team-photo" loading="lazy">
+            <h3 class="team-name">Tom Lawson</h3>
+            <div class="team-role">Analytics Lead</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         9. TESTIMONIALS SECTION
+         Client social proof in a scroll-snap carousel.
+         ============================================== -->
+    <section class="testimonials section-padding">
+      <div class="container">
+        <h2 class="section-heading scroll-reveal">What Clients Say</h2>
+        <div class="testimonial-carousel scroll-reveal">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <div class="quote-mark">&ldquo;</div>
+              <p class="quote-text">Ascent doubled our organic traffic in 4 months. The most data-driven team I've ever worked with.</p>
+              <div class="stars">★★★★★</div>
+              <div class="client-info">
+                <span class="client-name">Jamie Torres</span>
+                <span class="client-company">CEO @ Meridian Retail</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="quote-mark">&ldquo;</div>
+              <p class="quote-text">Our ROAS went from 1.8 to 4.2 in a single quarter. These people actually know paid media.</p>
+              <div class="stars">★★★★★</div>
+              <div class="client-info">
+                <span class="client-name">Kenji Yamada</span>
+                <span class="client-company">CMO @ Forge Athletics</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="quote-mark">&ldquo;</div>
+              <p class="quote-text">Finally, an agency that speaks in results, not vanity metrics. Ascent is the real deal.</p>
+              <div class="stars">★★★★★</div>
+              <div class="client-info">
+                <span class="client-name">Amara Osei</span>
+                <span class="client-company">Founder @ Lumis Financial</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-dots">
+            <button class="dot active" aria-label="Go to testimonial 1"></button>
+            <button class="dot" aria-label="Go to testimonial 2"></button>
+            <button class="dot" aria-label="Go to testimonial 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         10. CTA BANNER
+         Final push to action.
+         ============================================== -->
+    <section class="cta-banner">
+      <div class="cta-bg" style="background-image: url('https://picsum.photos/seed/cta/1200/600');"></div>
+      <div class="container cta-container scroll-reveal">
+        <h2 class="cta-heading">Ready to Start Your Climb?</h2>
+        <p class="cta-sub">Let's build a growth engine for your brand.</p>
+        <a href="#contact" class="btn btn-white">Book a Free Strategy Call</a>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         11. CONTACT SECTION
+         Get in touch form with simple front-end validation.
+         ============================================== -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <h2 class="section-heading scroll-reveal">Get In Touch</h2>
+        <div class="contact-split">
+          <div class="contact-info scroll-reveal">
+            <ul class="info-list">
+              <li>
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                42 Market Street, San Francisco, CA 94105
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <a href="mailto:hello@ascentdigital.co">hello@ascentdigital.co</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <a href="tel:+14155550192">+1 (415) 555-0192</a>
+              </li>
+            </ul>
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="#" aria-label="Twitter/X">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper scroll-reveal">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                <span class="error-msg">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                <span class="error-msg">Please enter a valid email</span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Tell us about your goals..."></textarea>
+                <span class="error-msg">Please enter a message</span>
+              </div>
+              <button type="submit" class="btn btn-primary w-full">Send Message</button>
+            </form>
+            <div id="formSuccess" class="form-success hidden">
+              <div class="success-icon">
+                <svg viewBox="0 0 24 24" width="48" height="48" stroke="var(--color-brand)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <h3>Thanks!</h3>
+              <p>We'll be in touch within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       12. FOOTER
+       Site end and legal links.
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          Ascent
+          <svg class="logo-chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+        <p class="tagline">Built for the climb</p>
+      </div>
+      <div class="footer-links">
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#results">Results</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="copyright">&copy; 2024 Ascent Digital. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Main Script -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
